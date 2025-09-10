@@ -1,0 +1,16 @@
+*tutils.txt*				    tutils.nvim – tiny utility helpers
+==============================================================================
+
+`tutils.nvim` provides a couple of lightweight helpers for Lua configs.
+
+==============================================================================
+
+API							*tutils-api* *tutils*
+
+tutils.safe_call(fn, ...)				*tutils.safe_call()*
+    Call a function safely (pcall wrapper, notifies on error).
+
+tutils.require_dir(luadir, [glob])			*tutils.require_dir()*
+    require() all Lua modules in a directory matching a Vim glob.
+
+vim:tw=78:ts=8:noet:ft=help:norl:
