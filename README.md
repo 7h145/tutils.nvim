@@ -1,19 +1,20 @@
 # tutils.nvim
 
-This is a tiny Lua module for [Neovim](https://github.com/neovim/neovim) for my personal use.  I'm sure this has been done many time and I assume you can find similar plugins which are better in many ways, but feel free to check out this one :)
+This is a tiny Lua module for [Neovim](https://github.com/neovim/neovim) for my personal use.  I assume something like this has been done many times before and you can probably find similar plugins which are better in many ways, but feel free to check out this one :)
 
 ## Installation with [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
 { 
-    '7h145/tutils',
+    '7h145/tutils.nvim',
+    version = '*',
     event = 'VeryLazy',
 }
 ```
 
 ## Usage:
 
-Just some Lua utility functions for now:
+Just some Lua utility functions to clean up my [Neovim](https://github.com/neovim/neovim) config for now:
 
 * `safe_call()`: a pcall() wrapper with vim.notify() on error.
 * `require_dir()`: require() all lua modules in a directory that match a vim glob
