@@ -21,13 +21,13 @@ Just some Lua utility functions to clean up my [Neovim](https://github.com/neovi
 
 I'm sure I'm not the first one writing these... 
 
-Practical application, in e.g. `init.lua`: require() all `*.lua` files in the `lua/snippets` directory by vim glob:
+Practical application, in e.g. `init.lua`: require() all `*.lua` files in the `lua/cfgparts` directory by vim glob:
 
 ```lua
 local tutils = require('tutils')
 
-tutils.require_dir('snippets', 'keymap-*.lua')
-tutils.require_dir('snippets', 'command-*.lua')
+tutils.require_dir('cfgparts', 'keymap-*.lua')
+tutils.require_dir('cfgparts', 'command-*.lua')
 ```
 
 Copyright 2025, thias <github.attic@typedef.net>, CC0 1.0
